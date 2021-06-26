@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Mr-IroFist"><meta name="keywords" content="前端"><meta name="description" content="前端的小知识，游戏经验分享，博主的日常小彩蛋"><link rel="alternative" href="/atom.xml" title="铁拳先生的 Blog" type="application/atom+xml"><link rel="icon" href="/img/拳击.png"><title>TypeScript泛型 - 铁拳先生的 Blog</title>
+<link rel="stylesheet" href="../../../../css/main.css">
+
+<link rel="stylesheet" href="../../../../js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="../../../../js/jquery-3.1.1.min.js"></script>
+
+<script src="../../../../js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 5.4.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">铁拳先生的 Blog</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="../../../../tags">标签</a></li><li class="head-nav__item"><a class="head-nav__link" href="../../../../archives">前端</a></li><li class="head-nav__item"><a class="head-nav__link" href="../../../../front-end">炉石</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2021-06-04T14:00:59.000Z">2021 - 06 - 04 22:00:59</time><h1 class="post__title"><a href="">TypeScript泛型</a></h1><div class="post__main echo"><p>觉得 TypeScript 泛型有点难，想系统学习 TypeScript 泛型相关知识的小伙伴们看过来，本文从八个方面入手，全方位带你一步步学习 TypeScript 中泛型，详细的内容大纲请看下图：<br><img src="https://user-gold-cdn.xitu.io/2020/6/10/1729b3d970e872ef?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="avatar"></p>
+<h1 id="一、泛型是什么"><a href="#一、泛型是什么" class="headerlink" title="一、泛型是什么"></a>一、泛型是什么</h1><p>软件工程中，我们不仅要创建一致的定义良好的 API，同时也要考虑可重用性。 组件不仅能够支持当前的数据类型，同时也能支持未来的数据类型，这在创建大型系统时为你提供了十分灵活的功能。</p>
+<p><strong>在像 C# 和 Java 这样的语言中，可以使用泛型来创建可重用的组件，一个组件可以支持多种类型的数据。 这样用户就可以用自己的数据类型来使用组件。</strong></p>
+<p>设计泛型的关键目的是在成员之间提供有意义的约束，这些成员可以是：类的实例成员、类的方法、函数参数和函数返回值。</p>
+<p>为了便于大家更好地理解上述的内容，我们来举个例子，在这个例子中，我们将一步步揭示泛型的作用。首先我们来定义一个通用的 <code>identity</code> 函数，该函数接收一个参数并直接返回它：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">identity</span> (<span class="hljs-params">value</span>) </span>&#123;<br> <span class="hljs-keyword">return</span> value<br> &#125;<br><br> <span class="hljs-keyword">const</span> newValue = identity(<span class="hljs-number">1</span>)<br> <span class="hljs-built_in">console</span>.log(newValue) <br></code></pre></td></tr></table></figure>
+
+</div></header></article></main><footer class="foot"><div class="foot-copy">&copy; 2016 - 2021 Mr-IroFist</div></footer>
+<script src="../../../../js/scroller.js"></script>
+
+<script src="../../../../js/main.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/01/assets/haru01.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
